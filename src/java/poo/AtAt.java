@@ -18,12 +18,12 @@ DecimalFormat df = new DecimalFormat("#.00");
         super(tipoNave, cantidadPasajeros, consumoCombustible, cantidadDeNaves);
     }
     
-    @Override
-    public String combustibleTotalNecesario(double totalParsec){ 
+@Override
+    public String combustibleTotalNecesario(double totalParsec, int cantNaves, int cantPasajeros){
         double total, temp;
-        temp = (totalParsec * cantidadDeNaves * cantidadPasajeros) * 0.25;
+        temp = (totalParsec * cantNaves * cantPasajeros) * 0.25;
         total = temp - totalParsec;
         return df.format(total);
-    } 
+    }
     
 }

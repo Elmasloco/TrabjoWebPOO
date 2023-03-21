@@ -19,8 +19,8 @@ DecimalFormat df = new DecimalFormat("#.00");
     }
     
     @Override
-    public String combustibleTotalNecesario(double totalParsec){
-        double total = totalParsec * cantidadDeNaves * cantidadPasajeros;
+    public String combustibleTotalNecesario(double totalParsec, int cantNaves, int cantPasajeros){
+        double total = totalParsec * cantNaves * cantPasajeros;
         return df.format(total);
     } 
     

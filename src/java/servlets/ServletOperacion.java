@@ -54,7 +54,7 @@ public class ServletOperacion extends HttpServlet {
                 out.println("<br>");
                 out.println("<h1>La cantidad de naves es de: " + naveAtAT.getCantidadDeNaves() + "</h1>");
                 out.println("<br>");
-                out.println("<h1>La cantidad de combustible necesario es de: " + naveAtAT.combustibleTotalNecesario(parsecsRecorridos) + "</h1>");
+                out.println("<h1>La cantidad de combustible necesario es de: " + naveAtAT.combustibleTotalNecesario(parsecsRecorridos, cantidadDeNaves, cantidadPasajerosNave) + "</h1>");
                 out.println("</body>");
                 out.println("</html>");
             }else if(tipoDeNave.equalsIgnoreCase("Supremacy")){
@@ -73,7 +73,7 @@ public class ServletOperacion extends HttpServlet {
                 out.println("<br>");
                 out.println("<h1>La cantidad de naves es de: " + naveSupremacy.getCantidadDeNaves() + "</h1>");
                 out.println("<br>");
-                out.println("<h1>La cantidad de combustible necesario es de: " + naveSupremacy.combustibleTotalNecesario(parsecsRecorridos) + "</h1>");
+                out.println("<h1>La cantidad de combustible necesario es de: " + naveSupremacy.combustibleTotalNecesario(parsecsRecorridos, cantidadDeNaves, cantidadPasajerosNave) + "</h1>");
                 out.println("</body>");
                 out.println("</html>");
             }else{
@@ -92,7 +92,7 @@ public class ServletOperacion extends HttpServlet {
                 out.println("<br>");
                 out.println("<h1>La cantidad de naves es de: " + nave1.getCantidadDeNaves() + "</h1>");
                 out.println("<br>");
-                out.println("<h1>La cantidad de combustible necesario es de: " + nave1.combustibleTotalNecesario(parsecsRecorridos) + "</h1>");
+                out.println("<h1>La cantidad de combustible necesario es de: " + nave1.combustibleTotalNecesario(parsecsRecorridos, cantidadDeNaves, cantidadPasajerosNave) + "</h1>");
                 out.println("</body>");
                 out.println("</html>");
             }
